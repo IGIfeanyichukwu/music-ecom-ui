@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    max-width: 1366px;
+    font-family: $font-sans;
+    position: relative;
+    margin: 0 auto;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+.bg1 {
+    height: 90rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background:  center / contain no-repeat url('../../assets/section-one-bg.png'),  bottom right no-repeat url('../../assets/section-one-triangle-bg.png');
+    background: orange;
+//    background-size: contain;
+}
+
+
+.header {
+    display: flex;
+    padding: 2rem;
+    z-index: 2;
+    position: relative;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        height: 90rem;
+        width: calc(100% + 2rem);
+        top: -5rem;
+        left: 0;        
+        z-index: 1;
+        background:  center / contain no-repeat url('../../assets/section-one-bg.png'),  bottom right no-repeat url('../../assets/section-one-triangle-bg.png');
+    //    background: orange;
+    //  
+    }
+    
+    .logo {
+        width: auto;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 2rem;
+        z-index: inherit;
+        
+        ul {
+            display: flex;
+            
+            li {
+                list-style: none;
+            }
+        }
+        
+        ul:nth-child(1) {
+            
+            li {
+                margin: 1rem;
+                color: $pri-color;
+            }
+        }
+        
+        ul:nth-child(2) {
+            li {
+                margin: 1rem;
+                
+                a {
+                    text-decoration: none;
+                    padding: 0.6rem 2rem;
+                    border-radius: 10rem;
+                    color: white;
+                    width: 15rem;
+                    display: block;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    text-align: center;
+                    box-shadow: $shadow-sm;
+                }
+            }
+            
+            li:nth-child(1) {
+                a {
+                    background: $pri-color;
+                }
+            }
+            
+            li:nth-child(2) {
+                a {
+                    background: $sec-color;
+                }
+            }
+        }
+    }
+}
