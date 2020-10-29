@@ -458,5 +458,111 @@ body {
 }
 
 .section-five {
-  background: orange;
+  padding: 0 12rem;
+}
+.section-five > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15rem;
+}
+.section-five > div:nth-child(1) h3 {
+  font-size: 4rem;
+  color: #6066f2;
+}
+.section-five > div:nth-child(1) h3 + div {
+  display: flex;
+}
+.section-five > div:nth-child(1) h3 + div span {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  text-align: center;
+  margin: 0;
+}
+.section-five > div:nth-child(1) h3 + div span:nth-child(1) {
+  background: #6066f2;
+  color: white;
+  border-top-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+}
+.section-five > div:nth-child(1) h3 + div span:nth-child(2) {
+  background: white;
+  color: grey;
+  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+}
+.section-five > div:nth-child(1) + div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.section-five > div:nth-child(1) + div .single-mini {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-five > div:nth-child(1) + div .single-mini div:nth-child(1) img {
+  width: 100%;
+  transform: scale(1.1);
+  margin-bottom: 3rem;
+}
+.section-five > div:nth-child(1) + div .single-mini div:nth-child(2) {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0 0;
+}
+.section-five > div:nth-child(1) + div .single-mini div:nth-child(2) span {
+  padding: 0.5rem 1rem 0;
+  font-weight: 800;
+}
+.section-five > div:nth-child(1) + div .single-mini div {
+  z-index: 2;
+}
+.section-five > div:nth-child(1) + div .single-mini .sf-s-bg {
+  background: linear-gradient(#ca7b9a, #946abc);
+  position: absolute;
+  width: 80%;
+  height: 75%;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+.section-five > div:nth-child(1) + div .single-mini .sf-s-bg span {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 10rem;
+  top: 0;
+  right: 0;
+  margin-left: calc(100% - 2.5rem);
+  margin-top: -2.5rem;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../../assets/texture-circle2.png");
+  background-position: center;
+  color: white;
+}
+
+.price1 {
+  color: #fea83b;
+}
+.price1 span {
+  border-top: 2px solid #fea83b;
+}
+
+.price2 {
+  color: #6066f2;
+}
+.price2 span {
+  border-top: 2px solid #6066f2;
+}
+
+.price3 {
+  color: #5ce0d3;
+}
+.price3 span {
+  border-top: 2px solid #5cf4d3;
 }

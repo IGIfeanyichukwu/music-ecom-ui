@@ -1,4 +1,151 @@
 .section-five {
+    padding: 0 12rem;
     
-    background: orange;
+//    background: orange;
+    
+    & > div:nth-child(1) {
+//        background: yellow;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 15rem;
+        
+        
+        h3 {
+            font-size: 4rem;
+            color: $pri-color;
+            
+            & + div {
+//                background: green;
+                display: flex;
+                span {
+                    display: inline-block;
+                    padding: 1.5rem 3rem;
+                    text-align: center;
+                    margin: 0;
+                    
+                }
+                
+                span:nth-child(1) {
+                    background: $pri-color;
+                    color: white;
+                    border-top-left-radius: 0.6rem;
+                    border-bottom-left-radius: 0.6rem;
+                }
+                
+                span:nth-child(2) {
+                    background: white;
+                    color: grey;
+                    border-top-right-radius: 0.6rem;
+                    border-bottom-right-radius: 0.6rem;
+                }
+            }
+        }
+        
+        & + div {
+//            background: red;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+            .single-mini {
+//                background: rgba(0, 255, 0, 0.2);
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+                div:nth-child(1) {
+                    
+                    
+                    img {
+                        width: 100%;
+                        transform: scale(1.1);
+                        margin-bottom: 3rem;
+                    }
+                }
+                
+                div:nth-child(2) {
+//                    background: red;
+                    width: 100%;
+                    
+                    text-align: center;
+                
+                    padding: 2rem 0 0;
+                    
+                    span {
+//                        background: yellow;
+                        padding: 0.5rem 1rem 0;
+//                        border-top: 2px solid green;
+                        font-weight: 800;
+                    }
+                }
+                
+                
+                div {
+                    z-index: 2;
+                }
+                
+                
+                
+                .sf-s-bg {
+//                    width: 14rem;
+//                    height: 14rem;
+                    background: linear-gradient(rgb(202, 123, 154), rgb(148, 106, 188));
+                    position: absolute;
+                    width: 80%;
+                    height: 75%;
+                    top: 50%;
+                    left: 50%;
+                    z-index: 1;
+                    transform: translate(-50%, -50%);
+//                    margin: 4rem;
+                    
+                    span {
+                        
+                        width: 5rem;
+                        height: 5rem;
+                        border-radius: 10rem;
+                        top: 0;
+                        right: 0;
+//                        margin: 0;
+                        margin-left: calc(100% - 2.5rem);
+                        margin-top: -2.5rem;
+//                        transform: translate(-100%);
+                        display: block;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: url('../../assets/texture-circle2.png');
+                        background-position: center;
+                        color: white;
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}
+
+.price1 {
+	color: $sec-color;
+    span {
+        border-top: 2px solid $sec-color;
+    }
+}
+
+.price2 {
+	color: $pri-color;
+    span {
+        border-top: 2px solid $pri-color;
+    }
+}
+
+.price3 {
+	color: rgb(92, 224, 211);
+    span {
+        border-top: 2px solid rgb(92, 244, 211);
+    }
 }
