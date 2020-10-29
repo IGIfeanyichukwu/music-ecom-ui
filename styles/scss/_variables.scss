@@ -3,6 +3,8 @@ $font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Ne
 
 $pri-color: rgb(96, 102, 242);
 $sec-color: rgb(254, 168, 59);
+$sec-color2: rgba(215, 116, 232);
+$sec-color3: rgba(221, 121, 233);
 
 @function secColor($opacityValue) {
 	$result: rgba(252, 105, 23, $opacityValue);

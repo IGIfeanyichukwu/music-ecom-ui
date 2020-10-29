@@ -1,0 +1,123 @@
+.section-four {
+    
+//    background: red;
+    margin-top: 30rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 100%;
+    padding: 0 12rem;
+    
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: calc(100% + 30rem);
+        z-index: -1;
+//        background: green;
+        background-image: url('../../assets/middle-irregualgar-shape.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .right {
+//        background: grey;
+        
+        h3 {
+            color: white;
+            font-size: 4rem;
+            
+            & + div, & + div + div {
+//                background: orange;
+                display: flex;
+                margin: 2rem 0;
+                
+                div:nth-child(1) {
+//                    background: green;
+                    width: 11rem;
+                    height: 11rem;
+                    border-radius: 10rem;
+                    text-align: center;
+                    border: 1px solid white;
+                    margin-right: 2rem;
+                    position: relative;
+                    
+                    & > span {
+//                        background: yellow;
+                        display: inline-block;
+                        width: calc(100% + 3px);
+                        height: calc(100% + 3px);
+                        border-radius: 10rem;
+                        border: 3px solid transparent;
+                        border-right: 3px solid $sec-color;
+                        border-bottom: 3px solid $sec-color;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        top: 0;
+                        left: 0;
+//                        transform: rotate(-45deg);
+                        
+                        span {
+//                            background: purple;
+//                            transform: rotate(45deg);
+                            display: inline-block;
+                            height: 80%;
+                            width: 80%;
+                            border-radius: 10rem;
+                            border: 2px dashed white;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            
+                           
+                            
+                            i {
+                                font-size: 5rem;
+                            }
+                        }
+                    }
+                }
+                
+                div:nth-child(2) {
+                    width: calc(100% - 11rem);
+                    color: white;
+                    h4 {
+                        font-size: 2.3rem;
+                        color: white;
+                    }
+                    
+                    p {
+                        margin: 1rem 0;
+                        
+                        a {
+                            color: $sec-color;
+                            text-decoration: none;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                
+                
+            }
+            
+            & + div + div {
+//                background: red;
+                div:nth-child(1) {
+                    & > span {
+                        border-right: 3px solid transparent;
+                        border-left: 3px solid $sec-color3;
+                        border-bottom: 3px solid $sec-color3;
+                }
+                }
+            }
+        }
+    }
+    
+ 
+}
+
