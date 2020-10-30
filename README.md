@@ -8,7 +8,7 @@ Below is the design of the UI
 
 HTML, SASS and a bit of JS was used for implement the above design.
 
-#### You can check out the implementation [here](https://github.com/IGIfeanyichukwu)
+## You can check out the implementation [here](https://music-ecom-ui.surge.sh)
 
 
 
