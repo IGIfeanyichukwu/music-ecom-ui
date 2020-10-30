@@ -3,12 +3,13 @@
     padding: 0 12rem;
     margin-top: 4rem;
     position: relative;
-    height: 30rem;
+    height: 33rem;
     text-align: center;
     display: flex;
     flex-direction: column;
+//    justify-content: center;
     justify-content: flex-end;
-    padding-bottom: 2rem;
+//    padding-bottom: 4rem;
     color: white;
     
     h3 {
@@ -25,6 +26,7 @@
             margin: 1rem 0;
             font-size: 1.3rem;
             
+            
             a {
                 color: white;
                 text-decoration: none;
@@ -37,10 +39,14 @@
                 margin-bottom: 1rem;
                 
                 & + div {
+//                    background: yellow;
+                    padding: 0 0 2rem;
                     
                     a {
                         color: rgba(155, 155, 155);
                         margin: 0 0.7rem;
+//                        padding: 0 0 2rem;
+                        
                     }
                 }
             }
@@ -52,14 +58,17 @@
         content: '';
         width: 100%;
         height: 100%;
-        background: orange;
+//        background: orange;
         display: block;
         position: absolute;
         z-index: -1;
         top: 0;
         left: 0;
 //        background: url('../../assets/bottom-irregular-shape.png');
-         background:  left 0% / 100% 100% no-repeat url("../../assets/bottom-irregular-shape.png");
+//         background:  left 0% / 100% 100% no-repeat url("../../assets/bottom-irregular-shape.png");
+        background-image: url('../../assets/bottom-irregular-shape.png');
+        background-size: cover;
+        background-repeat: no-repeat;
 //        background-position: top;
 //        background-size: contain;
 //        background-repeat: no-repeat;

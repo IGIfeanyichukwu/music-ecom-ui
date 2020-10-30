@@ -59,7 +59,7 @@
                     
                     
                     img {
-                        width: 100%;
+                        max-width: 100%;
                         transform: scale(1.1);
                         margin-bottom: 3rem;
                     }
@@ -119,6 +119,7 @@
                         background: url('../../assets/texture-circle2.png');
                         background-position: center;
                         color: white;
+                        border: 5px solid white;
                         
                     }
                 }
