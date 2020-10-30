@@ -1,0 +1,117 @@
+.section-six {
+//    background: orange;
+    padding: 0 12rem;
+//    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 6rem 0 0;
+    
+    &:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: blue;
+        position: absolute;
+        z-index: -1;
+        background: url('../../assets/headphone-drawing.png');
+        filter: hue-rotate(90deg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        
+    }
+    
+    h2 {
+        color: $pri-color;
+        font-size: 3.6rem;
+        margin-bottom: 2rem;
+        
+    }
+    
+    form {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        div:nth-child(1) {
+        
+            position: relative;
+            
+            input[type='text'] {
+                width: 25rem;
+//                height: 3rem;
+                padding: 1rem 1.5rem;
+                border-radius: 10rem;
+                border: none;
+                box-shadow: $shadow-md;
+                
+                
+                & + label {
+                    color: grey;
+                    position: absolute;
+                    left: 0;
+                    font-size: 1.3rem;
+                    padding: 1rem 1.5rem;
+                    pointer-events: none;
+                }
+                
+                &:focus + label, &:valid + label {
+                    display: none;
+                }
+                
+                &:required {
+                    box-shadow: none;
+                    border: none;
+                }
+            }
+        }
+        
+        div:nth-child(2) {
+            background: white;
+            position: relative;
+            border-radius: 10rem;
+            padding-right: 1rem;
+            box-shadow: $shadow-md;
+            
+            input[type='text'] {
+                width: 25rem;
+//                height: 3rem;
+                padding: 1rem 1.5rem;
+                border-radius: 10rem;
+                border: none;
+                
+                
+                & + label {
+                    color: grey;
+                    position: absolute;
+                    left: 0;
+                    font-size: 1.3rem;
+                    padding: 1rem 1.5rem;
+                    pointer-events: none;
+                    
+                }
+                
+                &:focus + label, &:valid + label {
+                    display: none;
+                }
+                
+                &:required {
+                    box-shadow: none;
+                    border: none;
+                }
+            }
+            
+            button {
+                background: blue;
+                border: none;
+                padding: 0.6rem 1.4rem;
+                border-radius: 3rem;
+                color: white;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+}
