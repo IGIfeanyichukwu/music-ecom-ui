@@ -75,6 +75,15 @@ body {
             li {
                 margin: 1rem;
                 color: $pri-color;
+                
+                a {
+                    color: $pri-color;
+                    text-decoration: none;
+                    
+                    &:hover {
+                        color: $sec-color;
+                    }
+                }
             }
         }
         
@@ -93,18 +102,27 @@ body {
                     font-weight: 600;
                     text-align: center;
                     box-shadow: $shadow-sm;
+                    
                 }
             }
             
             li:nth-child(1) {
                 a {
                     background: $pri-color;
+                    
+                    &:hover {
+                        opacity: 0.8;
+                    }
                 }
             }
             
             li:nth-child(2) {
                 a {
                     background: $sec-color;
+                        
+                    &:hover {
+                        opacity: 0.8;
+                    }
                 }
             }
         }
