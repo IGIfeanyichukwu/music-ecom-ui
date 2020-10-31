@@ -296,7 +296,8 @@
             
         }
         nav {
-//            display: none !important;
+           // display: none;
+           visibility: hidden;
             position: absolute;
             top: 8rem !important;
             left: 0;

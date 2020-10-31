@@ -28,17 +28,21 @@
                 form {
                     background: white;
                     display: inline-block;
+                    display: flex;
+                    justify-content: space-between;
                     position: relative;
                     padding-right: 1rem;
                     border-radius: 3rem;
                     overflow: hidden;
                     margin: 2rem 0;
+                    box-shadow: $shadow-md;
                     
                     input[type="search"] {
                         padding: 1.5rem;
                         outline: none;
 //                        width: 25rem;
                         padding-left: 2rem;
+                        width: calc(100% - 8rem);
                         
                         
                         &:focus + label {
@@ -69,10 +73,17 @@
                     button {
                         background: $pri-color;
                         border: none;
+                        width: 8rem;
                         padding: 0.8rem 1.5rem;
                         border-radius: 10rem;
                         color: white;
+                        margin: 0.5rem 0;
                         text-transform: uppercase;
+                        cursor: pointer;
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
                     }
                 }
             }

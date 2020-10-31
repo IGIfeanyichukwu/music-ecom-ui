@@ -29,6 +29,8 @@ body {
 .display-nav {
     height: auto !important;
     box-shadow: $shadow-lg !important;
+    visibility: visible !important;
+    // display: flex !important;
 
 }
 
@@ -84,7 +86,7 @@ body {
             height: 4rem;
             
             &:hover {
-                color: $sec-color;
+                // color: $sec-color;
             }
         }
 	
