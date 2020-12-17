@@ -18,4 +18,4 @@ HTML, SASS and a bit of JS was used for implement the above design.
 This project is open source licensed under the MIT license.
 
 ### Author
-[Ifeanyichuwku Gideon Idoko (Ifex)](https://ig-ifex.netlify.app)
+[Gideon Idoko](https://github.com/IamGideonIdoko)
